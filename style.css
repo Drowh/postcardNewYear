@@ -1,0 +1,118 @@
+/* Адаптивный дизайн для экранов шириной 768px и меньше */
+@media (max-width: 768px) {
+    .header {
+        font-size: 2.5rem;
+        /* Уменьшаем размер текста */
+        padding: 15px;
+    }
+
+    .video-container {
+        margin: 30px 0;
+        /* Уменьшаем отступы */
+    }
+
+    .video-frame {
+        width: 90%;
+        /* Растягиваем рамку на 90% ширины экрана */
+        padding: 3px;
+        /* Уменьшаем толщину рамки */
+    }
+
+    video {
+        width: 100%;
+        /* Видео занимает всю ширину рамки */
+        height: auto;
+        /* Сохраняем пропорции */
+    }
+}
+
+/* Адаптивный дизайн для экранов шириной 480px и меньше */
+@media (max-width: 480px) {
+    .header {
+        font-size: 2rem;
+        /* Ещё меньше текст для маленьких экранов */
+    }
+
+    .video-frame {
+        width: 95%;
+        /* Почти весь экран */
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('background-image.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    overflow: hidden;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    font-size: 3.5rem;
+
+    background-size: 300%;
+    -webkit-background-clip: text;
+    color: white;
+    animation: glow 3s infinite, gradient-move 5s infinite;
+    font-weight: 900;
+    margin-top: 100px;
+    text-shadow: 3px 3px 6px rgb(0 0 0), 0 0 15px rgb(0 0 0);
+}
+
+
+
+@keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.video-frame {
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 5px;
+    background: linear-gradient(90deg, #f5f9a7, #ff8ba7, #85e6ff, #f5f9a7);
+    background-size: 400%;
+    animation: border-glow 3s linear infinite;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+
+
+}
+
+@keyframes border-glow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+video {
+    display: block;
+
+    border-radius: 10px;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
