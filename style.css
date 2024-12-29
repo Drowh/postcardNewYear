@@ -50,16 +50,19 @@ body {
 }
 
 .header {
+    margin: 50px auto 30px;
+    max-width: 600px;
     text-align: center;
-    padding: 20px;
-    font-size: 2.5rem;
-    ;
-    background-size: 300%;
-    -webkit-background-clip: text;
-    color: white;
-    animation: glow 3s infinite, gradient-move 5s infinite;
-    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px;
+    background: linear-gradient(90deg, #f5f9a7, #ff8ba7, #85e6ff, #f5f9a7);
+    animation: border-glow 3s linear infinite;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
     text-shadow: 3px 3px 6px rgb(0 0 0), 0 0 15px rgb(0 0 0);
+    font-weight: 700;
 }
 
 
