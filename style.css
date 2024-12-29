@@ -52,7 +52,8 @@ body {
 .header {
     text-align: center;
     padding: 20px;
-    font-size: 2.5rem;;
+    font-size: 2.5rem;
+    ;
     background-size: 300%;
     -webkit-background-clip: text;
     color: white;
@@ -114,3 +115,22 @@ canvas {
     left: 0;
     pointer-events: none;
 }
+
+.footer {
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px;
+    background: linear-gradient(90deg, #f5f9a7, #ff8ba7, #85e6ff, #f5f9a7);
+    background-size: 400%;
+    animation: border-glow 3s linear infinite;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    text-shadow: 3px 3px 6px rgb(0 0 0), 0 0 15px rgb(0 0 0);
+    font-weight: 600;
+
+}
+
